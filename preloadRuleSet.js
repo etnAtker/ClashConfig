@@ -4,6 +4,7 @@ module.exports.parse = async (raw, { axios, yaml, console, homeDir }) => {
     const rawObj = yaml.parse(raw);
     const providers = rawObj['rule-providers'];
 
+    fs.mkdir(homeDir + '\\ruleset', () => {});
     for (let provider in providers) {
         const obj = providers[provider];
 
