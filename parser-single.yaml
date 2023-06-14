@@ -114,6 +114,7 @@ parsers:
         - RULE-SET,google,PROXY
 
         # 直连
+        - RULE-SET,steamcn,DIRECT
         - RULE-SET,applications,DIRECT
         - RULE-SET,private,DIRECT
         - RULE-SET,icloud,DIRECT 
@@ -265,6 +266,14 @@ parsers:
           behavior: classical
           url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Xbox.yaml"
           path: ./ruleset/xbox.yaml
+          interval: 86400
+
+        # SteamCN
+        steamcn: 
+          type: http
+          behavior: classical
+          url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/SteamCN.yaml"
+          path: ./ruleset/steamcn.yaml
           interval: 86400
   
   # 预加载rule-providers
