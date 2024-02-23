@@ -89,11 +89,11 @@ parsers:
       commands:
         - proxy-groups.选择节点.proxies=[]proxyNames # 向指定策略组添加订阅中的节点名，可使用正则过滤
         - proxy-groups.选择节点.proxies.0+DIRECT # 向指定分组第一个位置添加一个 DIRECT 节点名
-        - proxy-groups.自动选择-香港.proxies=[]proxyNames|香港
-        - proxy-groups.自动选择-美国.proxies=[]proxyNames|美国
-        - proxy-groups.自动选择-日本.proxies=[]proxyNames|日本
-        - proxy-groups.自动选择-台湾.proxies=[]proxyNames|台湾
-        - proxy-groups.自动选择-新加坡.proxies=[]proxyNames|新加坡
+        - proxy-groups.自动选择-香港.proxies=[]proxyNames|🇭🇰
+        - proxy-groups.自动选择-美国.proxies=[]proxyNames|🇺🇸
+        - proxy-groups.自动选择-日本.proxies=[]proxyNames|🇯🇵
+        - proxy-groups.自动选择-台湾.proxies=[]proxyNames|^(.*)(台湾|TW)+(.*)$
+        - proxy-groups.自动选择-新加坡.proxies=[]proxyNames|🇸🇬
         # 一些可能用到的正则过滤节点示例，使分组更细致
         # []proxyNames|a                         # 包含a
         # []proxyNames|^(.*)(a|b)+(.*)$          # 包含a或b
